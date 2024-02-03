@@ -1,0 +1,781 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1920px;
+    min-width: 320px;
+
+}
+
+.top_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.img_head {
+    display: flex;
+    max-width: 218px;
+    max-height: 114px;
+    height: 100%;
+    width: 100%;
+}
+
+.head_group {
+    max-width: 682px;
+    max-height: 62px;
+}
+
+.contact_group {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.contact_text {
+    font-family: PTRootUIM;
+
+}
+
+.mail_group {
+    max-width: 138;
+    max-height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    justify-content: space-around;
+}
+
+.phone_group {
+    padding-left: 60px;
+    max-width: 162px;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    justify-content: space-around;
+}
+
+.head_icon1 {
+    width: 22px;
+    height: 22px;
+}
+
+.contact_icons {
+    padding-left: 245px;
+    width: 76px;
+    height: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.head_icon3 {
+    width: 18px;
+    height: 18px;
+}
+
+.item {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.request_button {
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #0046BB;
+    border-radius: 100px;
+}
+
+.request_text {
+    color: white;
+}
+
+.request_button:hover {
+    background-color: #FFFFFF;
+    border: #0046BB 2px solid;
+
+    .request_text {
+        color: #0046BB;
+    }
+}
+
+.house {
+    max-width: 1920px;
+    height: 600px;
+    position: relative;
+    background-image: url(img/fon.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.house::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/дом\ 1.svg), url(img/rectangle.svg);
+    background-size: cover, 60%;
+    background-position: top, right;
+    background-repeat: no-repeat;
+}
+
+
+.house_content {
+    position: relative;
+    z-index: 1;
+    position: relative;
+    width: 382px;
+    height: 116px;
+    left: 105px;
+    top: 94px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.main_house {
+    padding-top: 20px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.house_button {
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+}
+
+.house_button_text {
+    display: flex;
+    justify-content: center;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0046BB;
+}
+
+.house_button:hover {
+    background-color: #0046BB;
+
+    .house_button_text {
+        color: #FFFFFF;
+    }
+}
+
+.material {
+    position: absolute;
+    width: 670px;
+    height: 48px;
+    left: 105px;
+    top: 794px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: #383838;
+
+
+}
+
+.grid_material {
+    padding-top: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.box {
+    width: 330px;
+    height: 330px;
+    border-radius: 20px;
+    border-style: 1px black dashed;
+    background-color: #F2F5F5;
+    display: flex;
+    align-items: end;
+}
+
+.rectangle {
+    content: '';
+    width: 314px;
+    height: 167px;
+    position: absolute;
+    border: 1px solid #0046BB;
+    border-radius: 50%;
+    top: 10px;
+    left: 1px;
+}
+
+.rectangle_second {
+    width: 314px;
+    height: 167px;
+    position: absolute;
+    border: 1px solid #0046BB;
+    border-radius: 50%;
+    top: 20px;
+    left: 5px;
+}
+
+.box:hover {
+    box-shadow: 0 0 20px black;
+    background-color: #0046BB;
+
+    .material_text {
+        color: #FFFFFF;
+    }
+
+    .arrow {
+        background-color: #FFFFFF;
+    }
+
+    .arrow_button {
+        background-color: #0046BB;
+    }
+
+    .arrow_button::after {
+        border-top: 2px solid #0046BB;
+        border-right: 2px solid #0046BB;
+    }
+
+    .rectangle {
+        border-color: #FFFFFF;
+    }
+
+    .rectangle_second {
+        border-color: #FFFFFF;
+    }
+}
+
+.material_text {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #383838;
+    padding-bottom: 20px;
+
+}
+
+.arrow {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #0046BB;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_button {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.arrow_button::after {
+    content: '';
+    position: absolute;
+    border-top: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    bottom: -4.8px;
+    left: 7px;
+}
+
+
+.Smaterial {
+    background-image: url(img/доски.svg);
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: 50px;
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.Kmaterial {
+    background-image: url(img/крепеж.svg);
+    background-size: 80%;
+    background-position-x: center;
+    background-position-y: 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.Omaterial {
+    background-image: url(img/крыша.svg);
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: 30px;
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.category {
+    position: relative;
+    margin-top: 600px;
+    margin-left: 110px;
+    background-image: url(img/aerial.svg);
+    max-width: 1060px;
+    height: 442px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.circle {
+    position: absolute;
+    background-size: cover;
+    content: '';
+    width: 620px;
+    height: 600px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(56, 56, 56, 0.9) 0%, rgba(56, 56, 56, 0) 100%);
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.category_content {
+    width: 492px;
+    height: 96px;
+    left: 455px;
+    top: 1387px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 48px;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-left: 90px;
+
+}
+
+.category_content2 {
+    width: 495px;
+    height: 48px;
+    left: 455px;
+    top: 1493px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.category_button {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 40px;
+    padding-left: 120px;
+}
+
+.accept_button {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.doc_button {
+    margin-top: 20px;
+
+}
+
+.dock_text1 {
+    width: 294px;
+    height: 40px;
+    left: 455px;
+    top: 1672px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.doc_text {
+
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+
+}
+
+.name_button {
+    width: 230px;
+    height: 54px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.phone_button {
+    width: 230px;
+    height: 54px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 120px;
+}
+
+.send_button {
+    width: 135px;
+    height: 54px;
+    background-color: #0046BB;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.send_button:hover{
+    background-color: #FFFFFF;
+    .send_button_text{
+        color: #0046BB;
+    }
+}
+.orb3{
+    padding-right: -100px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0046BB;
+    border: 20px solid;
+}
+.advantages_buttons1{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.arm_button{
+    width: 340px;
+    height: 108px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.category_button_text {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0046BB;
+    margin-left: 30px;
+}
+
+.send_button_text {
+    color: #FFFFFF;
+}
+
+.orion {
+    padding-top: 80px;
+    background-image: url(img/orion_rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.orion_head {
+    position: absolute;
+    width: 1042px;
+    height: 96px;
+    left: 100px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #383838;
+
+}
+
+.orion_info {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.item1 {
+    z-index: 0;
+    position: relative;
+    width: 425px;
+    height: 183px;
+    background-color: #F2F5F5;
+    border-radius: 20px;
+}
+
+.item2 {
+    margin-top: 40px;
+    position: relative;
+    width: 425px;
+    height: 183px;
+    background-color: #F2F5F5;
+    border-radius: 20px;
+}
+
+.orb {
+    z-index: 1;
+    position: absolute;
+    top: 1995px;
+    left: -200px;
+    margin-top: 30px;
+    margin-left: 250px;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: #0046BB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orb2 {
+    z-index: 1;
+    position: absolute;
+    top: 2215px;
+    left: -200px;
+    margin-top: 30px;
+    margin-left: 250px;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: #0046BB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    width: 36px;
+    height: 36px;
+    background-color: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%);
+    clip-path: polygon(50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%);
+}
+
+.galo4ka {
+    width: 36px;
+    height: 36px;
+    background-color: #FFFFFF;
+    -webkit-clip-path: polygon(45% 64%, 84% 14%, 100% 28%, 47% 100%, 0 49%, 15% 32%);
+    clip-path: polygon(45% 64%, 84% 14%, 100% 28%, 47% 100%, 0 49%, 15% 32%);
+}
+
+.mission {
+    padding-top: 30px;
+    padding-left: 100px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #383838;
+
+
+}
+
+.mission_text {
+    padding-left: 100px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color: #383838;
+}
+
+.target {
+    padding-top: 30px;
+    padding-left: 100px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #383838;
+}
+
+.target_text {
+    padding-left: 100px;
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color: #383838;
+}
+
+.info {
+    width: 550px;
+    height: 417px;
+}
+
+.profile_text {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #383838;
+    padding-bottom: 20px;
+}
+.advantages{
+    margin-top: 150px;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    height: 500px;
+    background-image: url(img/wood.svg);
+}
+.advantages_head{
+margin-top: -150px;
+padding-left: 100px;
+font-family: 'PT Root UI';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+color: #FFFFFF;
+}
+.our_advantages{
+    padding-left: 100px;
+font-family: 'PT Root UI';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+h1 {
+    font-size: 64;
+    line-height: 72px;
+    font-family: PTRootUIB;
+    color: white;
+    ;
+}
+
+h2 {
+    font-size: 40/48;
+    font-family: PTRootUIB;
+    color: #383838;
+}
+
+h3 {
+    font-size: 30/38;
+    font-family: PTRootUIB;
+    color: #383838;
+}
+
+h4 {
+    font-size: 24/32;
+    font-family: PTRootUIM;
+    color: #383838;
+}
+
+h5 {
+    font-size: 20/28;
+    font-family: PTRootUIR;
+    color: #383838;
+}
+
+h6 {
+    font-size: 16/24;
+    font-family: PTRootUIR;
+    color: #383838;
+}
+
+p {
+    font-size: 14/20;
+    font-family: PTRootUIR;
+    color: #383838;
+}
+
+@font-face {
+    font-family: PTRootUIB;
+    src: url("/Users/Horde/VS Code/Quest/fonts/PTRootUIBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: PTRootUIR;
+    src: url("/Users/Horde/VS Code/Quest/fonts/PTRootUIRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: PTRootUIM;
+    src: url("/Users/Horde/VS Code/Quest/fonts/PTRootUIMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul li::marker {
+    color: #0046BB;
+    font-size: 1.5em;
+}
